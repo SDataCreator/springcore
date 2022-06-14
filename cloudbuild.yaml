@@ -1,8 +1,8 @@
 steps:
-  - name: 'gcr.io/cloud-builders/mvn'
+  - name: 'gcr.io/storied-glazing-353316/mvn'
     args: ['install']
-  - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/springcore/spring-boot-container-test', '.']
+  - name: 'gcr.io/storied-glazing-353316/docker'
+    args: ['build', '-t', 'gcr.io/storied-glazing-353316/spring-boot-container-test', '.']
     timeout: 500s
 options:
   machineType: 'N1_HIGHCPU_8' # HIGHCPU로 빌드 스피드 업
